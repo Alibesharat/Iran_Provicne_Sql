@@ -17,6 +17,12 @@ Step 2 - Modify Up Metohde Of Genreated Code :
                string Query="INSERT INTO Provinces(Name) VALUES(N'آذربایجان شرقی'), (N'آذربایجان غربی'), (N'اردبیل'), (N'اصفهان'), (N'البرز'), (N'ایلام'), (N'بوشهر'), (N'تهران'), (N'چهارمحال بختیاری'), (N'خراسان جنوبی'), (N'خراسان رضوی'), (N'خراسان شمالی'), (N'خوزستان'), (N'زنجان'), (N'سمنان'), (N'سیستان و بلوچستان'), (N'فارس'), (N'قزوین'), (N'قم'), (N'کردستان'), (N'کرمان'), (N'کرمانشاه'), (N'کهکیلویه و بویراحمد'), (N'گلستان'), (N'گیلان'), (N'لرستان'), (N'مازندران'), (N'مرکزی'), (N'هرمزگان'), (N'همدان'), (N'یزد')";
             migrationBuilder.Sql(Query);
             }
+            
+       protected override void Down(MigrationBuilder migrationBuilder)
+           {
+              string Query = "Delete From  Provinces";
+              migrationBuilder.Sql(Query);
+           }
         
  Step 3 update database:
  
